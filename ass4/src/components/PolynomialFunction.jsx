@@ -32,30 +32,34 @@ const PolynomialFunction = () => {
       <h2>Polynomial Function</h2>
       <form onSubmit={handleSubmit}>
         <label>Coefficients (space-separated):</label>
-        <input 
-          type="text" 
-          value={coefficients} 
-          onChange={(e) => setCoefficients(e.target.value)} 
+        <input
+          type="text"
+          value={coefficients}
+          onChange={(e) => setCoefficients(e.target.value)}
         />
         <label>Exponents (space-separated):</label>
-        <input 
-          type="text" 
-          value={exponents} 
-          onChange={(e) => setExponents(e.target.value)} 
+        <input
+          type="text"
+          value={exponents}
+          onChange={(e) => setExponents(e.target.value)}
         />
         <label>X Value:</label>
-        <input 
-          type="number" 
-          value={xValue} 
-          onChange={(e) => setXValue(e.target.value)} 
+        <input
+          type="number"
+          value={xValue}
+          onChange={(e) => setXValue(e.target.value)}
         />
         <button type="submit">Evaluate</button>
       </form>
 
       {results.length > 0 && (
         <p>
-          Result 1: {results[0]}, Result 2: {results[1]}
-        </p>
+        <label>Polynomial results</label>
+        <input type="text" value={results} readOnly />
+        
+        
+      </p>
+        
       )}
     </div>
   );

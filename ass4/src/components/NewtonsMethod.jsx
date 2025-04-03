@@ -41,7 +41,7 @@ function Newton() {
       <h3>Newton's Method</h3>
       <label>Root Guess:</label>
       <input type="number" value={rootGuess} onChange={(e) => setRootGuess(e.target.value)} />
-      <label>Root Approximation (Result):</label>
+      <label>Root Approximation :</label>
       <input type="text" value={newtonResult} readOnly />
       <button onClick={calculateNewton}>Calculate</button>
     </div>

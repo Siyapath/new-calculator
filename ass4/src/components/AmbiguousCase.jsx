@@ -28,7 +28,7 @@ function Ambiguous() {
       <input type="number" value={sideAamb} onChange={(e) => setSideAamb(e.target.value)} />
       <label>Side b:</label>
       <input type="number" value={sideBamb} onChange={(e) => setSideBamb(e.target.value)} />
-      <label>Triangle Type (Result):</label>
+      <label>Triangle Type :</label>
       <input type="text" value={ambiguousResult} readOnly />
       <button onClick={calculateAmbiguous}>Calculate</button>
     </div>

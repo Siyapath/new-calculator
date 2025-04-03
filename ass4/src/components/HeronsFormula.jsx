@@ -31,9 +31,16 @@ const HeronsFormula = () => {
         <input type="number" value={sideB} onChange={(e) => setSideB(e.target.value)} />
         <label>Side C:</label>
         <input type="number" value={sideC} onChange={(e) => setSideC(e.target.value)} />
+        <label>Herons Results</label>
+        <input type="text" value={area} readOnly />
         <button type="submit">Calculate</button>
+      
+        
+        
+        
       </form>
-      {area && <p>Area: {area} square units</p>}
+        
+        
     </div>
   );
 };
